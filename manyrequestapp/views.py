@@ -18,3 +18,8 @@ class Add(View):
         y=int(request.POST["t2"])
         z=x+y
         return HttpResponse("The sum is: "+str(z))
+     def post(self,request):
+        x=int(request.POST["t1"])
+        y=int(request.POST["t2"])
+        z=x+y
+        return HttpResponse("The sum is: "+str(z))
